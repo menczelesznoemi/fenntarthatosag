@@ -5,22 +5,19 @@ function $(elem) {
 function ID(elem) {
   return document.getElementById(elem);
 }
-function CLASS(elem) {
-  return document.getElementsByClassName(elem);
-}
 
 function init() {
-  fetch("kerdes.json")
+  fetch("teszt.json")
     .then((response) => response.json())
     .then((data) => {
-      console.log(data.kerdesek)
-      feldolgoz(data.kerdesek)
+      console.log(data.teszt)
+      feldolgoz(data.teszt)
     })
 }
 
-function feldolgoz(kerdesek) {
+function feldolgoz(teszt) {
   var txt = ''
-  kerdesek.forEach(function (kerdes) {
+  teszt.forEach(function (kerdes) {
 
     txt += '<ul>'
     for (const key in kerdes) {
