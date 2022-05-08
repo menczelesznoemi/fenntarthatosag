@@ -35,4 +35,5 @@ function feldolgoz2(cikkek) {
 
   console.log(txt2);
   CLASS('cikkek')[0].innerHTML = txt2;
+
 } 
