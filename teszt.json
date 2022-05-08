@@ -1,0 +1,335 @@
+{
+    "kerdesek": [
+        {
+            "kerdes": "A műanyagot milyen színű szelektív kukába gyűjtjük?",
+            "v1": "citromsárga",
+            "v2": "kék",
+            "v3": "zöld",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "A papírt milyen színű szelektív kukába gyűjtjük?",
+            "v1": "kék",
+            "v2": "piros",
+            "v3": "szürke",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "Az üveget milyen színű szelektív kukába gyűjtjük?",
+            "v1": "zöld",
+            "v2": "lila",
+            "v3": "citromsárga",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "A fémet milyen színű szelektív kukába gyűjtjük?",
+            "v1": "szürke",
+            "v2": "kék",
+            "v3": "narancssárga",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "Milyen színűek a szelektív kukák?",
+            "v1": "citromsárga, kék, szürke, zöld",
+            "v2": "piros, kék, zöld, fekete",
+            "v3": "citromsárga, zöld, lila, rózsaszín",
+            "helyesv": "v1", 
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "A felsorolás között mi a legkörnyezetbarátabb közlekedés?",
+            "v1": "séta",
+            "v2": "vonat",
+            "v3": "autó",
+            "helyesv": "v1", 
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "A felsorolás között melyik a takarékosabb?",
+            "v1": "zuhanyzás",
+            "v2": "habfürdő, pancsolás kádban",
+            "v3": "fürdőszobából vízipark csinálás",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "Miket komposztálhatunk?",
+            "v1": "zöldség - gyümölcs maradék, tojáshéj",
+            "v2": "nagy ágak, fatörzsek, diófalevél",
+            "v3": "fém, műanyag, vegyszeres dolgok",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "Fogmosásnál... ",
+            "v1": " elzárom a csapot, ha már nem kell víz",
+            "v2": "nem zárom el a csapot, hadd folyjon",
+            "v3": "ki tekerem tejlesen, mert miért ne",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "Közlekedésnél....",
+            "v1": "ha lehet biciklizek",
+            "v2": "autózom",
+            "v3": "tömegközlekedést használok",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+            "kerdes": "Az okostelefont...",
+            "v1": "csak 2-3 évente cserélem",
+            "v2": "évente cserélem",
+            "v3": "amikor van egy jobb akkor azt rögtön megveszem",
+            "helyesv": "v1",
+            "pont": 1,
+            "tipus": "Alt.isk"
+        },
+        {
+        "kerdes":"Hogyan dobjuk a szelektívbe a műanyagot?",
+        "v1": "Tisztán, kimosva",
+        "v2": "koszosan",
+        "v3": "mindegy",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "kozepisk"
+    },
+    {
+        "kerdes": "A felsorolás között mi a legkörnyezetbarátabb közlekedés?",
+        "v1": "séta",
+        "v2": "vonat",
+        "v3": "autó",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "kozepisk"
+    },{
+        "kerdes": "Ha szemetet látsz eldobva...",
+        "v1": "felveszem és kidobom a legközelebb kukába",
+        "v2": "otthagyom",
+        "v3": "belerúgok",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "kozepisk"
+    },
+    {
+        "kerdes": "Mi kerülhet a papír szelektívbe?",
+        "v1": "újságok, tejes -gyümölcsleves papírdobozok, könyvek",
+        "v2": "hőpapír (nyugta, blokk)",
+        "v3": "olajjal/zsíradékkal szennyezett papír",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "kozepisk"
+    },
+    {
+        "kerdes": "Miket komposztálhatunk?",
+        "v1": "zöldség - gyümölcs maradék, tojáshéj",
+        "v2": "nagy ágak, fatörzsek, diófalevél",
+        "v3": "fém, műanyag, vegyszeres dolgok",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "kozepisk"
+    },
+    {
+        "kerdes": "Mi a komposzt?",
+        "v1": "szerves anyagok lebomlásának a végterméke",
+        "v2": "szerves és szervetlen anyagok lebomlásának a végterméke",
+        "v3": "szervetlen anyagok lebomlásának a végterméke",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "kozepisk"
+    },
+    {
+        "kerdes": "A könyveket....",
+        "v1": "kiveszem a könyvtárból/elcserélem",
+        "v2": "megveszem drágán a boltban",
+        "v3": "elégetem,ha már nem kell",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "kozepisk"
+    },
+    {
+        "kerdes": "Mi az ökologiai lábnyom?",
+        "v1":"Egy mutató, hogy mekkora mértékben éljük föl természetes erőforrásokat.", 
+        "v2": "Az amikor sárba lépünk és ott marad a cipő talpának a lenyomata.",
+        "v3": "Az amikor valaki lápnyomokat hagy az úton.",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "kozepisk"
+    },
+    {
+        "kerdes": "Az okostelefont...",
+        "v1": "csak 2-3 évente cserélem",
+        "v2": "évente cserélem",
+        "v3": "amikor van egy jobb akkor azt rögtön megveszem",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "kozepisk"
+    },{
+        "kerdes": "Hova tegyük az üveget? Több jó választ is bejelölhetsz.",
+        "v1": "A színes üveghulladékok közé dobjuk a kupak nélküli boros-, pezsgős, sörös- és röviditalos színesüvegeket, természetesen átöblítés után, tisztán.",
+        "v2": "csak szimplán kidobjuk",
+        "v3": "A fehérüveg-hulladékok közé csak az olyan elöblített üvegeket dobjuk, amelyek átlátszók. Ilyen például a dunsztosüveg, a tejesüveg, bébiételes üveg stb.",
+        "helyesv": ["v1","v3"],
+        "pont": 1,
+        "tipus": "kozepisk"
+    },
+    {
+        "kerdes": "Mi a legjobb alternatíva a nejlon zacskókra?",
+        "v1": "vászon szatyrok",
+        "v2": "papír zacskók",
+        "v3": "erősebb műanyagból készült szatyrok",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "kozepisk"
+    },
+    {
+        "kerdes": "Található-e Magyarországon (műanyag) csomagolás mentes bolt?",
+        "v1": "Igen, van",
+        "v2": "Magyaroszágon nincs, de külföldön van",
+        "v3": "Magyaroszágon és külföldön sincs",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "f.felnott"
+    },
+    {
+        "kerdes": "Hogyan dobjuk a szelektívbe a műanyagot?",
+        "v1": "tisztán, kimosva",
+        "v2": "koszosan",
+        "v3": "mindegy",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "f.felnott"
+    },
+    {
+        "kerdes": "Ha bővíteni akarod a ruhatárad és mindegy milyen márkájú akkor...",
+        "v1": "turkálókban vásárolok",
+        "v2": "Online vásárolok",
+        "v3": "noname boltokban vásárolok",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "f.felnott"
+    },
+    {
+        "kerdes": "Mi a legjobb alternatíva a nejlon zacskókra?",
+        "v1": "vászon szatyrok",
+        "v2": "papír zacskók",
+        "v3": "erősebb műanyagból készült szatyrok",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "f.felnott"
+    },
+    {
+        "kerdes": "A felsorolás között mi a legkörnyezetbarátabb közlekedés?",
+        "v1": "séta",
+        "v2": "vonat",
+        "v3": "autó",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "f.felnott"
+    },
+    {
+        "kerdes": "Ha szemetet látsz eldobva...",
+        "v1": "felveszem és kidobom a legközelebb kukába",
+        "v2": "otthagyom",
+        "v3": "belerúgok",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "f.felnott"
+    },
+    {
+        "kerdes": "Mi az újrahasznosítás célja?",
+        "v1": "A természetes erőforrások lehető legkevesebb felhasználása.",
+        "v2": "kevesebb szemét legyen",
+        "v3": "mert jól hangzik",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "f.felnott"
+    },
+    {
+        "kerdes": "Mi kerülhet a papír szelektívbe?",
+        "v1": "újságok, tejes -gyümölcsleves papírdobozok, könyvek",
+        "v2": "hőpapír (nyugta, blokk)",
+        "v3": "olajjal/zsíradékkal szennyezett papír",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "f.felnott"
+    },
+    {
+        "kerdes": "Mi a komposzt?",
+        "v1": "szerves anyagok lebomlásának a végterméke",
+        "v2": "szerves és szervetlen anyagok lebomlásának a végterméke",
+        "v3": "szervetlen anyagok lebomlásának a végterméke",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "f.felnott"
+    },
+    {
+        "kerdes": "Miket komposztálhatunk?",
+        "v1": "zöldség - gyümölcs maradék, tojáshéj",
+        "v2": "nagy ágak, fatörzsek, diófalevél",
+        "v3": "fém, műanyag, vegyszeres dolgok",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "f.felnott"
+    },
+    {
+        "kerdes": "Vásárlásnál",
+        "v1": "figyelembe veszem, hogy milyen a csomagolása",
+        "v2": "nem törödök, hogy milyen a csomagolása",
+        "v3": "nem érdekel, hogy milyen a csomagolása",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "f.felnott"
+    },
+    {
+        "kerdes": "Ha elmegyek a boltba.....",
+        "v1": "csak azt veszem meg amire szükségem van",
+        "v2": "mindent megveszek, amit a szemem kíván",
+        "v3": "felvásárolom az egész LIDL-t",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "f.felnott"
+    },
+    {
+        "kerdes": "Mi  a szürkevíz?",
+        "v1": "olyan szennyezett víz amelyben, szappan vagy mosószer maradványok, kisebb nagyobb szennyeződések vannak.",
+        "v2": "szürke színű víz",
+        "v3": " javarészt a vécékben kepződik, olyan  szennyezett vízet értünk alatta, amiben fertőző, egészségre és környezetre veszélyes baktériumok vannak",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "f.felnott"
+    },
+    {
+        "kerdes": "Mi a feketevíz?",
+        "v1": " javarészt a vécékben kepződik, olyan szennyezett vízet értünk alatta, amiben fertőző, egészségre és környezetre veszélyes baktériumok vannak",
+        "v2": "olyan szennyezett víz amelyben, szappan vagy mosószer maradványok, kisebb nagyobb szennyeződések vannak.",
+        "v3": "fekete színű víz",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "f.felnott"
+    },
+    {
+        "kerdes": "Az okostelefont...",
+        "v1": "csak 2-3 évente cserélem",
+        "v2": "évente cserélem",
+        "v3": "amikor van egy jobb akkor azt rögtön megveszem",
+        "helyesv": "v1",
+        "pont": 1,
+        "tipus": "f.felnott"
+    }
+    ]
+}
