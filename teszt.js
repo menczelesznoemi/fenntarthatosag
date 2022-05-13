@@ -5,27 +5,48 @@ function $(elem) {
 function ID(elem) {
   return document.getElementById(elem);
 }
+const gomb = document.getElementById('kovetkezo')
 
 function init() {
-  fetch("teszt.json")
+    quiz="teszt.json";
+    const adat="kerdesek";
+    adatbeolvasas(quiz);
+}
+
+
+
+function adatbeolvasas(quiz, adat) {
+  fetch(quiz)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data.teszt)
-      feldolgoz(data.teszt)
-    })
+      console.log(data.kerdesek)
+      feldolgoz(data.kerdesek)
+    });
+    
 }
-
 function feldolgoz(teszt) {
   var txt = ''
+  var index = 0;
   teszt.forEach(function (kerdes) {
+    var radioCsoport = "csoport";
+    txt += '<ul>';
 
-    txt += '<ul>'
     for (const key in kerdes) {
-      txt += `<li><span>${key}:</span><span> ${kerdes[key]}</span></li>`
-
+        if(key == "kerdes"){
+            txt += `<span class="kerdesSzoveg"> ${kerdes[key]}</span>`;
+        }
+        else if(key == "v1" || key == "v2" || key == "v3"){
+            txt += `<li><input type="radio" name="${radioCsoport + index}"><span> ${kerdes[key]}</span></input></li>`;
+        }
+        
+        
     }
-
-    txt += '</ul>'
+    index++;
+    txt += '</ul>';
   })
 
+
+
+$('.json_content')[0].innerHTML = txt;
 }
+
