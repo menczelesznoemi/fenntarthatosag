@@ -1,0 +1,25 @@
+aside{
+    grid-area: as;
+}
+
+article{
+    grid-area: ar;
+}
+img {
+    max-width: 200px;
+}
+header{
+    grid-area: h;
+}
+footer {
+    grid-area: f;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "h h"
+        "as ar"
+        "f f";
+}
