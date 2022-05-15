@@ -20,19 +20,33 @@ function init() {
 }
 
 function feldolgoz2(cikkek) {
-  var txt2 = ''
-  cikkek.forEach(function (cikk, index) {
+  var txt2 = '';
+  var txt = '';
+  
+  cikkek.forEach(function (cikk) {
 
-    txt2 += '<ul>'
+    
     for (const key in cikk) {
-	console.log(key, ":", cikk[key]);
-      txt2 += `<li><span>${key}:</span><span> ${cikk[key]}</span></li>`;
+      if(key.includes("cikkcim") || key.includes("cim")){
+      
+        console.log(key, ":", cikk[key]);
+      
+      txt2 += `<h1><span> ${cikk[key]}</span></h1>`;
+    }
+    else if(key.includes("bekezdes") || key.includes("pelda")){
+      txt2 += `<p><span> ${cikk[key]}</span></p>`;
+    }
+    else if(key.includes("kep")){
+      txt += `<img src="${cikk[key]}"><img>`;
+    }
     }
 
-    txt2 += '</ul>';
+    
+    
   });
 
   console.log(txt2);
+  console.log(txt);
   CLASS('cikkek')[0].innerHTML = txt2;
-
+  CLASS('kepek')[0].innerHTML = txt;
 } 
