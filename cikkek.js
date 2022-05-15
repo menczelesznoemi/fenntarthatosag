@@ -27,7 +27,6 @@ function feldolgoz2(cikkek) {
     for (const key in cikk) {
 	console.log(key, ":", cikk[key]);
       txt2 += `<li><span>${key}:</span><span> ${cikk[key]}</span></li>`;
-      
     }
 
     txt2 += '</ul>';
