@@ -15,11 +15,17 @@ function init() {
     .then((response) => response.json())
     .then((data) => {
       console.log(data.cikkek)
-      feldolgoz2(data.cikkek)
+      feldolgoz(data.cikkek)
     });
+    var kepTomb = document.querySelectorAll(".kepek")
+    console.log(kepTomb)
+    kepTomb.forEach(function(elem) {
+      elem.addEventListener("click", kattintas);
+      
+  });
 }
 
-function feldolgoz2(cikkek) {
+function feldolgoz(cikkek) {
   var txt2 = '';
   var txt = '';
   
@@ -33,7 +39,7 @@ function feldolgoz2(cikkek) {
       
       txt2 += `<h1><span> ${cikk[key]}</span></h1>`;
     }
-    else if(key.includes("bekezdes") || key.includes("pelda")){
+    else if(key.includes("bekezdes") || key.includes("pelda") || key.includes("szerzo")){
       txt2 += `<p><span> ${cikk[key]}</span></p>`;
     }
     else if(key.includes("kep")){
@@ -45,8 +51,23 @@ function feldolgoz2(cikkek) {
     
   });
 
+  
+
   console.log(txt2);
   console.log(txt);
   CLASS('cikkek')[0].innerHTML = txt2;
   CLASS('kepek')[0].innerHTML = txt;
 } 
+
+var tomb=[];
+
+function kattintas() {
+  console.log(event.target.ID); 
+  tomb.push(event.target.ID);
+  console.log(tomb);
+  CLASS('cikkek')[0].style.display = "block";
+  
+}
+
+
+
