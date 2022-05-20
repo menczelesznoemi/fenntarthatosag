@@ -1,4 +1,4 @@
-window.addEventListener('load', init)
+
 function $(elem) {
   return document.querySelectorAll(elem)
 }
@@ -7,24 +7,46 @@ function ID(elem) {
 }
 const gomb = document.getElementById('kovetkezo')
 
-function init() {
+function init(tipus) {
     quiz="teszt.json";
     const adat="kerdesek";
-    adatbeolvasas(quiz);
+    adatbeolvasas(quiz, tipus);
 }
 
+function kerdesvalogatas(){
+    
+    var e = document.getElementById("kerdes_tipus");
+    var tipus = e.value;
+    console.log("tipus: " + tipus);
+    init(tipus);
+}
 
+function kiertekel(){
+    var pont = 0;
+    helyesValaszok = document.getElementsByClassName("helyesv");
+    for (var i = 0; i < helyesValaszok.length; ++i) {
+        var item = helyesValaszok[i];  
+        console.log(item);
+        if(item.checked){
+            pont++;
+        }
+    }
+    console.log("pontszam: " + pont);
 
-function adatbeolvasas(quiz, adat) {
+    eredm = document.getElementById("eredm");
+    eredm.innerHTML = "Végeredmény: " + pont + " pont";
+}
+
+function adatbeolvasas(quiz, tipus) {
   fetch(quiz)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data.kerdesek)
-      feldolgoz(data.kerdesek)
+      feldolgoz(data.kerdesek, tipus)
     });
     
 }
-function feldolgoz(teszt) {
+function feldolgoz(teszt, tipus) {
+  console.log("feldolgoz running");
   var txt = ''
   var index = 0;
   teszt.forEach(function (kerdes) {
@@ -32,12 +54,21 @@ function feldolgoz(teszt) {
     txt += '<ul>';
 
     for (const key in kerdes) {
-        if(key == "kerdes"){
-            txt += `<span class="kerdesSzoveg"> ${kerdes[key]}</span>`;
+        if(tipus == kerdes["tipus"]){
+          if(key == "kerdes"){
+              txt += `<span class="kerdesSzoveg"> ${kerdes[key]}</span>`;
+          }
+          else if(key == "v1" || key == "v2" || key == "v3"){
+              if(key == kerdes["helyesv"]){
+                txt += `<li><input type="radio" class="helyesv" name="${radioCsoport + index}"><span> ${kerdes[key]}</span></input></li>`;
+              }
+              else{
+                txt += `<li><input type="radio" name="${radioCsoport + index}"><span> ${kerdes[key]}</span></input></li>`;
+              }
+              
+          }
         }
-        else if(key == "v1" || key == "v2" || key == "v3"){
-            txt += `<li><input type="radio" name="${radioCsoport + index}"><span> ${kerdes[key]}</span></input></li>`;
-        }
+        
         
         
     }
