@@ -10,16 +10,35 @@ aside{
 article{
     grid-area: ar;
     padding: 5px;
+    
 }
-aside img {
-    max-width: 200px;
+article img {
+    width: 100%;
+    /*height: 90%;*/
     display: block;
     padding: 5px;
 }
+#cikk1, #cikk2 {
+    max-height: 420px;
+}
+#cikk1 img, #cikk2 img{
+    max-height: 350px;
+}
+button {
+    width: 31%;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: darkseagreen;
+}
+button:hover{
+    opacity: 0.8;
+}
+
 header{
     grid-area: h;
     background-image: url("kepek/header.jpg");
     color:white;
+    min-height: 400px;
 }
 header img {
     height: 100%;
@@ -36,18 +55,21 @@ nav {
 main {
     width: 90%;
     margin: 0 auto;
-    display: grid;
+    /*display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
         "h h"
         "n n"
-        "as ar"
-        "f f";
+        "ar ar"
+        "f f";*/
 }
 
 body {
     background-color: lightgreen;
 }
-.cikkek {
-    display: none;
+@media only screen and (max-width: 400px) {
+    button{
+        width:90%;
+        padding: 5px;
+    }
 }

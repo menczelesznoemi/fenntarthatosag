@@ -11,22 +11,43 @@ function CLASS(elem) {
 
 function init() {
   
+  valasztas();
+}
+
+function valasztas(event) {
+  ID("cikk1").onclick = function () {
+      console.log("katt");
+      beolvaso("cikk1");
+
+  };
+
+  ID("cikk2").onclick = function () { 
+      console.log("katt");
+      beolvaso("cikk2");
+  }
+  ID("cikk3").onclick = function () {
+      console.log("katt");
+      beolvaso("cikk3");
+  }
+
+}
+
+function beolvaso(key) {
+
+  
   fetch("cikkek.json")
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data.cikkek)
-      feldolgoz(data.cikkek)
-    });
-    var kepTomb = document.querySelectorAll(".kepek")
-    console.log(kepTomb)
-    kepTomb.forEach(function(elem) {
-      elem.addEventListener("click", kattintas);
-      
-  });
+      .then((response) => response.json())
+      .then((data) => {
+
+          cikkek = data[key];
+          feldolgoz(data[key]);
+
+      });
+
 }
 
 function feldolgoz(cikkek) {
-  var txt2 = '';
+  
   var txt = '';
   
   cikkek.forEach(function (cikk) {
@@ -37,14 +58,12 @@ function feldolgoz(cikkek) {
       
         console.log(key, ":", cikk[key]);
       
-      txt2 += `<h1><span> ${cikk[key]}</span></h1>`;
+      txt += `<h1><span> ${cikk[key]}</span></h1>`;
     }
     else if(key.includes("bekezdes") || key.includes("pelda") || key.includes("szerzo")){
-      txt2 += `<p><span> ${cikk[key]}</span></p>`;
+      txt += `<p><span> ${cikk[key]}</span></p>`;
     }
-    else if(key.includes("kep")){
-      txt += `<img src="${cikk[key]}"><img>`;
-    }
+    
     }
 
     
@@ -53,21 +72,10 @@ function feldolgoz(cikkek) {
 
   
 
-  console.log(txt2);
-  console.log(txt);
-  CLASS('cikkek')[0].innerHTML = txt2;
-  CLASS('kepek')[0].innerHTML = txt;
-} 
-
-var tomb=[];
-
-function kattintas() {
-  console.log(event.target.ID); 
-  tomb.push(event.target.ID);
-  console.log(tomb);
-  CLASS('cikkek')[0].style.display = "block";
   
-}
+  console.log(txt);
+  CLASS('cikkek')[0].innerHTML = txt;
+} 
 
 
 
