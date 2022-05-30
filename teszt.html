@@ -27,13 +27,20 @@
 
 
     </article>
-        <div>
-            <button id="kesz">Kész</button>
-        </div>
+    
+    <select id="kerdes_tipus">
+        <option value="Alt.isk">Általános iskolás kérdések</option>
+        <option value="kozepisk">Közép iskolás kérdések</option>
+        <option value="f.felnott">F. felnőtt kérdések</option>
+    </select></br>
+    <button onclick="kerdesvalogatas();">Kiválasztás</button>
+    
+  
 
-    <div class ="json_content">
-        
+    <div class ="json_content"></div>
+    <div>
+        <button id="kesz" onclick="kiertekel();">Beküld</button>
     </div>
-
+    <h3 id="eredm"></h3>
 </body>
 </html>
