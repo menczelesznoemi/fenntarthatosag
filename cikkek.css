@@ -67,6 +67,9 @@ main {
 body {
     background-color: lightgreen;
 }
+.cikkek img{
+    width:50%;
+}
 @media only screen and (max-width: 400px) {
     button{
         width:90%;

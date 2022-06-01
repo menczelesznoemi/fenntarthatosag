@@ -54,19 +54,27 @@ function feldolgoz(cikkek) {
 
     
     for (const key in cikk) {
-      if(key.includes("cikkcim") || key.includes("cim")){
+      if(key.includes("cikkcim")){
       
         console.log(key, ":", cikk[key]);
       
       txt += `<h1><span> ${cikk[key]}</span></h1>`;
     }
+    else if(key.includes("cim")){
+      
+      console.log(key, ":", cikk[key]);
+    
+    txt += `<h1><span> ${cikk[key]}</span></h1>`;
+  }
     else if(key.includes("bekezdes") || key.includes("pelda") || key.includes("szerzo")){
       txt += `<p><span> ${cikk[key]}</span></p>`;
     }
+    else if(key.includes("kep")){
+      txt += `<img src="${cikk[key]}"><img>`;
     
     }
 
-    
+    }  
     
   });
 
